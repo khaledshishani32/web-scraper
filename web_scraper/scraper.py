@@ -7,8 +7,7 @@ def get_citations_needed_count(url):
     soup = BeautifulSoup(response.text,'html.parser')
     result=soup.find_all('sup',class_='noprint Inline-Template Template-Fact')
     return len(result)
-
-# print(get_citations_needed_count(url))
+print(get_citations_needed_count(url))
 
 
 def get_citations_needed_report(url):
